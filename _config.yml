@@ -20,7 +20,7 @@ description: A virtual proof that he's trying
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: Nomadic Barista / Data Scientist coming to your town
+  About Me: "/aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
