@@ -10,7 +10,7 @@ gh-badge: [star, follow]
 
 # What confuses weather prediction models?
 The weatherman is always wrong, so it's no wonder his head is in the clouds.  
-This lame joke reflects an experience we all collectively have had. Weather is hard to predict. Machine learning tools in modern society are more powerful every day to assist in adding predictive power to the massive amounts of data being constantly collected. One question that it would be useful to answer on weather models is: why are they wrong? What factors can contribute to predictive errors. To briefly explore, I fitted a Random Forest Regressor model to the error of predictions within a five year dataset of South Korean summer weather data.
+This lame joke reflects an experience we all collectively have had. Weather is hard to predict. Machine learning tools in modern society are more powerful every day to assist in adding predictive power to the massive amounts of data being constantly collected. One question that it would be useful to answer on weather models is: why are they wrong? What factors can contribute to predictive errors? To briefly explore, I fitted a Random Forest Regressor model to the error of predictions within a five year dataset of South Korean summer weather data.
 
 
 ![](/img/sum_temps.png){: .center-block :}
@@ -18,7 +18,7 @@ This lame joke reflects an experience we all collectively have had. Weather is h
 
 Notice in the data above that no season follows exactly the same pattern, though there is a drop off into the month of August. This simply illustrates the chaotic form weather data often takes.  
 
-The regressor model was fit to a new column composed of the difference between the next day's actual high/low temperature with the high/low prediction, calculated by Local Data Assimilation and Prediction System (LDAPS) collected across 25 measurement sites. Generally, this prediction was only off by 1-2 degrees Celsius
+The regressor model was fit to a new column composed of the difference between the next day's actual high/low temperature with the high/low prediction, calculated by Local Data Assimilation and Prediction System (LDAPS) collected across 25 measurement sites. Generally, this prediction was only off by 1-2 degrees Celsius. **My goal is to find the variables that played the biggest role in confusing the model**, or the least important weather-related features.
 
 ![](/img/feature_top.png){: .center-block :}
 *The high temp and low temp models did not apply importance to the same features. The non-temperature features that low temp model looked at most were station slope, elevation (DEM), and latitude. Meanwhile, the high temp model looked to the next day's predictions for humidity (LDAPS_RHmin), for early cloud cover (LDAPS_CC1), and for average latent heat flux (LDAPS_LH).*
