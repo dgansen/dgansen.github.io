@@ -8,5 +8,5 @@ bigimg: /img/backgroundunit2.jpg
 
 # What confuses weather prediction models?
 
-![](/img/newplot(1).png){: .center-block :}
+![](img/newplot (1).png){: .center-block :}
 *Data given is five years of summer temperature highs and lows*
