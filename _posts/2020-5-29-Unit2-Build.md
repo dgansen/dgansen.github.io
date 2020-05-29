@@ -5,7 +5,7 @@ subtitle: Re-evaluating South Korean Weather Prediction Data
 tags: [weather]
 bigimg: /img/backgroundunit2.jpg
 gh-repo: dgansen/DS_Unit-2-Build
-gh-badge: [star, follow]
+gh-badge: [star,follow]
 ---
 
 # What confuses weather prediction models?
@@ -23,10 +23,12 @@ The regressor model was fit to a new column composed of the difference between t
 ![](/img/feature_top.png){: .center-block :}
 *The high temp and low temp models did not apply importance to the same features. The non-temperature features that low temp model looked at most were station slope, elevation (DEM), and latitude. Meanwhile, the high temp model looked to the next day's predictions for humidity (LDAPS_RHmin), for early cloud cover (LDAPS_CC1), and for average latent heat flux (LDAPS_LH).*
 
-
+What I did not expect was how differently the two models would value the features in guessing how wrong the LDAPS predictions would be. In the table above, it's obvious that other temperature data would be useful in finding temperature difference, but that slope and elevation would be so important in low, while humidity and early cloud cover in high was surprising.
 
 ![](/img/feature_bottom.png){: .center-block :}
 *For the low temp model, the five **least** significant features incorporated were the four 6-hour sections of next-day predictions for average precipitation. For the high temp model, they were almost the same features that the low temp model most valued*
+
+I was hoping this would be more consistent between high and low predictions, but it's interesting to note that all four split separations of precipitation were so confounding to the low temperature prediction.
 
 Data obtained at UC Irvine Machine Learning Repository, provided by:
 Cho, D., Yoo, C., Im, J., & Cha, D. (2020). Comparative assessment of various machine learning-based bias correction methods for numerical weather prediction model forecasts of extreme air temperatures in urban areas. Earth and Space Science. (Accepted)
