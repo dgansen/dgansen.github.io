@@ -12,7 +12,7 @@ bigimg: /img/backgroundunit2.jpg
 *Data given is five years of summer temperature highs and lows*
 
 ![](/img/feature_top.png){: .center-block :}
-*Most significant non-temperature features the model incorporated were the Slope angle of station, Elevation (DEM), and latitude. The high temp and low temp models each applied importance to the same features *
+* The high temp and low temp models did not apply importance to the same features. The non-temperature features that low temp model looked at most were station slope, elevation (DEM), and latitude. Meanwhile, the high temp model looked to the next day's predictions for humidity (LDAPS_RHmin), for early cloud cover (LDAPS_CC1), and for average latent heat flux (LDAPS_LH).*
 
 ![](/img/feature_bottom.png){: .center-block :}
 *Five least significant features the model incorporated were *
