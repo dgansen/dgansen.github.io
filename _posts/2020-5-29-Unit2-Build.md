@@ -9,7 +9,8 @@ gh-badge: [star, follow]
 ---
 
 # What confuses weather prediction models?
-
+The weatherman is always wrong, so it's no wonder his head is in the clouds.  
+This 
 ![](/img/sum_temps.png){: .center-block :}
 *Data given is five years of summer temperature highs and lows*
 
@@ -18,3 +19,7 @@ gh-badge: [star, follow]
 
 ![](/img/feature_bottom.png){: .center-block :}
 *For the low temp model, the five **least** significant features incorporated were the four 6-hour sections of next-day predictions for average precipitation. For the high temp model, they were almost the same features that the low temp model most valued*
+
+Data obtained at UC Irvine Machine Learning Repository, provided by:
+Cho, D., Yoo, C., Im, J., & Cha, D. (2020). Comparative assessment of various machine learning-based bias correction methods for numerical weather prediction model forecasts of extreme air temperatures in urban areas. Earth and Space Science. (Accepted)
+[link](https://archive.ics.uci.edu/ml/datasets/Bias+correction+of+numerical+prediction+model+temperature+forecast])
