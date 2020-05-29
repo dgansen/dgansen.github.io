@@ -4,6 +4,8 @@ title: Lambda School Unit 2 Build Project
 subtitle: Re-evaluating South Korean Weather Prediction Data
 tags: [weather]
 bigimg: /img/backgroundunit2.jpg
+gh-repo: dgansen/DS_Unit-2-Build
+gh-badge: [star, follow]
 ---
 
 # What confuses weather prediction models?
