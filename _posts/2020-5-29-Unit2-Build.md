@@ -10,7 +10,9 @@ gh-badge: [star, follow]
 
 # What confuses weather prediction models?
 The weatherman is always wrong, so it's no wonder his head is in the clouds.  
-This 
+This lame joke reflects an experience we all collectively have had. Weather is hard to predict. Machine learning tools in modern society are more powerful every day to assist in adding predictive power to the massive amounts of data being constantly collected. One question that it would be useful to answer on weather models is: why are they wrong? What factors can contribute to predictive errors. To briefly explore, I fitted a Random Forest Regressor model to the error of predictions within a five year dataset of South Korean weather data.
+
+
 ![](/img/sum_temps.png){: .center-block :}
 *Data given is five years of summer temperature highs and lows*
 
